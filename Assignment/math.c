@@ -5,27 +5,18 @@
 
 int math(int num1, int num2, char operator)
 {
-    if(operator == '+')
-        return num1 + num2;
-    else if(operator == '-')
-        return num1 - num2;
-    else if(operator == '*')
-        return num1 * num2;
-    else if(operator == '/')
-        return num1 / num2;
-    else if(operator == '%')
-        return num1 % num2;
-    else if(operator == '<')
-        return num1 << num2;
-    else if(operator == '>')
-        return num1 >> num2;
-    else if(operator == '&')
-        return num1 & num2;
-    else if(operator == '|')
-        return num1 | num2;
-    else if(operator == '^')
-        return num1 ^ num2;
-    else if(operator == '~')
-        return ~num1;
+    switch (operator)
+    {
+        case '+': return num1 + num2;
+        case '-': return num1 - num2;
+        case '*': return num1 * num2;
+        case '/': return num1 / num2;
+        case '%': return num1 % num2;
+        case '<': return num1 << num2;
+        case '>': return num1 >> num2;
+        case '&': return num1 & num2;
+        case '|': return num1 | num2;
+        case '^': return num1 ^ num2;
+        case '~': return ~num1;
+    }
 }
-
